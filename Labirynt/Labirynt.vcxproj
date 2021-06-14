@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F230402E-C54D-439E-A57D-B78CF333578F}</ProjectGuid>
     <RootNamespace>Labirynt</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -68,13 +68,31 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include;FX11\DirectX\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x86;FX11\Bin\Desktop_2015_Win10\Win32\Debug;FX11\DirectX\Lib\x86;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>FX11\DirectX\Utilities\bin\x86;C:\Program Files %28x86%29\Windows Kits\8.1\bin\x86;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include;FX11\DirectX\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>FX11\Bin\Desktop_2015_Win10\Win32\Release;C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x86;FX11\DirectX\Lib\x86;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\Program Files %28x86%29\Windows Kits\8.1\bin\x86;FX11\DirectX\Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dx11.lib;D3DCompiler.lib;xinput.lib;Effects11d.lib;dxerr.lib;dxgi.lib;dinput8.lib;dxguid.lib;dsound.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -94,7 +112,14 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;D3DCompiler.lib;xinput.lib;Effects11.lib;dxerr.lib;dxgi.lib;dinput8.lib;dxguid.lib;dsound.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -110,6 +135,75 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicModel.cpp" />
+    <ClCompile Include="d3dApp.cpp" />
+    <ClCompile Include="Dzwieki.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="GameTimer.cpp" />
+    <ClCompile Include="GeometryGenerator.cpp" />
+    <ClCompile Include="M3DLoader.cpp" />
+    <ClCompile Include="LoadSave.cpp" />
+    <ClCompile Include="MathHelper.cpp" />
+    <ClCompile Include="Mechanic.cpp" />
+    <ClCompile Include="Meshes.cpp" />
+    <ClCompile Include="MeshGeometry.cpp" />
+    <ClCompile Include="Napisy.cpp" />
+    <ClCompile Include="Objects.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Renders.cpp" />
+    <ClCompile Include="RenderStates.cpp" />
+    <ClCompile Include="SkinnedData.cpp" />
+    <ClCompile Include="SkinnedModel.cpp" />
+    <ClCompile Include="Sky.cpp" />
+    <ClCompile Include="Ssao.cpp" />
+    <ClCompile Include="SsaoMeshes.cpp" />
+    <ClCompile Include="Structures.cpp" />
+    <ClCompile Include="TextureMgr.cpp" />
+    <ClCompile Include="ThirdPersonCamera.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicModel.h" />
+    <ClInclude Include="d3dApp.h" />
+    <ClInclude Include="d3dUtil.h" />
+    <ClInclude Include="dirent.h" />
+    <ClInclude Include="Dzwieki.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="GeometryGenerator.h" />
+    <ClInclude Include="LightHelper.h" />
+    <ClInclude Include="M3DLoader.h" />
+    <ClInclude Include="LoadSave.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="Mechanic.h" />
+    <ClInclude Include="Meshes.h" />
+    <ClInclude Include="MeshGeometry.h" />
+    <ClInclude Include="Napisy.h" />
+    <ClInclude Include="Objects.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Renders.h" />
+    <ClInclude Include="RenderStates.h" />
+    <ClInclude Include="SkinnedData.h" />
+    <ClInclude Include="SkinnedModel.h" />
+    <ClInclude Include="Sky.h" />
+    <ClInclude Include="Ssao.h" />
+    <ClInclude Include="SsaoMeshes.h" />
+    <ClInclude Include="Structures.h" />
+    <ClInclude Include="TextureMgr.h" />
+    <ClInclude Include="ThirdPersonCamera.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="FX\Basic.fx" />
+    <FxCompile Include="FX\DebugTexture.fx" />
+    <FxCompile Include="FX\LightHelper.fx" />
+    <FxCompile Include="FX\NormalMap.fx" />
+    <FxCompile Include="FX\Sky.fx" />
+    <FxCompile Include="FX\Ssao.fx" />
+    <FxCompile Include="FX\SsaoNormalDepth.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

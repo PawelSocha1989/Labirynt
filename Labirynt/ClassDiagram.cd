@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BasicModel">
+    <Position X="67.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAKAAFAAAAAQAAAAAgIAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>BasicModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D3DApp">
+    <Position X="16.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAgBEABBEWAgAAAKQ4AQAAAAgBIjECZEBIACBEAAhAo=</HashCode>
+      <FileName>d3dApp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dzwieki">
+    <Position X="50.75" Y="13.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Dzwieki::WaveHeaderType">
+        <TypeIdentifier>
+          <NewMemberFileName>Dzwieki.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CBAgAAGAAAAABRAAAAAAAQkAQAAhEAAkAAAAAKARQgA=</HashCode>
+      <FileName>Dzwieki.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Effect">
+    <Position X="59.5" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicEffect">
+    <Position X="58" Y="11.5" Width="2" />
+    <InheritanceLine Type="Effect">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.146" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>RgEQAAAABBAYAAAEIAABQAAAQAAAAAAEDERAkAAEQQA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NormalMapEffect">
+    <Position X="60.25" Y="11.5" Width="2" />
+    <InheritanceLine Type="Effect">
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.092" Y="-0.027" Height="0.182" Width="0.5" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>RQEAAAgARFAYAAAEIAABQBAAQAAAAAAFDERAsAAEQQA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkyEffect">
+    <Position X="56" Y="15" Width="1.75" />
+    <InheritanceLine Type="Effect" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="60.5" Y="11.247" />
+        <Point X="60.5" Y="11.377" />
+        <Point X="57.873" Y="11.377" />
+        <Point X="57.873" Y="16.375" />
+        <Point X="57.75" Y="16.375" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-0.094" Y="1.332" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAQAABAAAAAAAAAAAAAAAAAAABAAAAECIA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SsaoNormalDepthEffect">
+    <Position X="62.5" Y="11.5" Width="2.25" />
+    <InheritanceLine Type="Effect">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.12" Y="0.146" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAEAAAIAAABBAEAAAAAQABCARAAAQGQAA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SsaoEffect">
+    <Position X="63" Y="16" Width="1.75" />
+    <InheritanceLine Type="Effect" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="60.5" Y="11.247" />
+        <Point X="60.5" Y="19.823" />
+        <Point X="62.706" Y="19.823" />
+        <Point X="62.706" Y="16.5" />
+        <Point X="63" Y="16.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>sAAAAAgBEAABIAwAAAAAEEAEEAEAAAAIgAAAAAARAAE=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugTexEffect">
+    <Position X="56" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAEAAAAAAAAAAgAjEAAAAAAAJAAAAMAAA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Effects">
+    <Position X="56" Y="17.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAgAAAAhAAAAAEAAAEAAAAAAICAAA=</HashCode>
+      <FileName>Effects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameTimer">
+    <Position X="69.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAgAACAABAAJAAAIAgAAAAAAAAUAIAAAAAAAQQA=</HashCode>
+      <FileName>GameTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeometryGenerator">
+    <Position X="66.75" Y="3" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GeometryGenerator::Vertex">
+        <TypeIdentifier>
+          <NewMemberFileName>GeometryGenerator.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="GeometryGenerator::MeshData">
+        <TypeIdentifier>
+          <NewMemberFileName>GeometryGenerator.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometryGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M3DLoader">
+    <Position X="69.25" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACYAEAACAIAABAAAAAEAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>M3DLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadSave">
+    <Position X="21" Y="1" Width="1.75" />
+    <InheritanceLine Type="Meshes" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21" Y="12" />
+        <Point X="21.812" Y="12" />
+        <Point X="21.812" Y="11.723" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.021" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EgAACFFQAAIgIYAiAEaCQIIAIABCgQAEhEKQUCAsACA=</HashCode>
+      <FileName>LoadSave.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathHelper">
+    <Position X="50.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAACIAAAAAAIEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MathHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mechanic">
+    <Position X="15.25" Y="13.5" Width="1.75" />
+    <InheritanceLine Type="LoadSave" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.562" Y="11.723" />
+        <Point X="22.562" Y="13.027" />
+        <Point X="17.246" Y="13.027" />
+        <Point X="17.246" Y="13.344" />
+        <Point X="15.812" Y="13.344" />
+        <Point X="15.812" Y="13.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-6.649" Y="0.599" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEHAAAAAQACQAAiAAAAMAIACgABiAAAAAOAIJAAABTA=</HashCode>
+      <FileName>Mechanic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meshes">
+    <Position X="18.75" Y="1" Width="2.25" />
+    <InheritanceLine Type="D3DApp" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.5" Y="10.824" />
+        <Point X="17.5" Y="11.188" />
+        <Point X="18.75" Y="11.188" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.349" Y="0.11" Height="0.182" Width="0.5" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="SsaoMeshes" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="11.5" />
+        <Point X="18.75" Y="11.5" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.607" Y="0.034" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>UEEoCEAAAAIwAhCCQFAgAigQBAYQAAAQGgEaVEMCAYA=</HashCode>
+      <FileName>Meshes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshGeometry">
+    <Position X="55.75" Y="22.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="MeshGeometry::Subset">
+        <TypeIdentifier>
+          <NewMemberFileName>MeshGeometry.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEEAgBAAAIgAAQAEAAAAAEACAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>MeshGeometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Napisy">
+    <Position X="53" Y="21.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Napisy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects">
+    <Position X="17" Y="13.5" Width="1.75" />
+    <InheritanceLine Type="Mechanic" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17" Y="19.188" />
+        <Point X="17.729" Y="19.188" />
+        <Point X="17.729" Y="18.646" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAECAAIAAAAAAAACgCAAAAAQARkhFAAAAAAACRIAA=</HashCode>
+      <FileName>Objects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renderer">
+    <Position X="22.75" Y="1" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Renderer::BoundingSphere">
+        <TypeIdentifier>
+          <NewMemberFileName>Renderer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>iQxggEARSwYoZIYAYURKAAAgAFEgEDXEEhSCADGEAQA=</HashCode>
+      <FileName>Renderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renders">
+    <Position X="18.75" Y="13.5" Width="1.5" />
+    <InheritanceLine Type="Objects" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.019" Y="13.5" />
+        <Point X="18.019" Y="13.118" />
+        <Point X="19.625" Y="13.118" />
+        <Point X="19.625" Y="13.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>UAAAAGICEAAAAAAAgQAAAgQCgEAAAAAAINwAAQABABg=</HashCode>
+      <FileName>Renders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderStates">
+    <Position X="73.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAEAAAAAAAAAAAAAAAAQAAAAAAAAAFAAAgAAIAAAA=</HashCode>
+      <FileName>RenderStates.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkinnedData">
+    <Position X="73.5" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAggAAAIABEAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>SkinnedData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkinnedModel">
+    <Position X="73.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAACAAFAAAAAAAAAQAgIAAAAAAAAAEAAAAAEAAAA=</HashCode>
+      <FileName>SkinnedModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sky">
+    <Position X="73.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAAAAAAAAgEAAAAAAAAAAACAACAAEAAAACAAAAA=</HashCode>
+      <FileName>Sky.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ssao">
+    <Position X="71.25" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABIACAAYAYEEQgAIAAAICEQIEIAgEAACAAIACAAEBAA=</HashCode>
+      <FileName>Ssao.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SsaoMeshes">
+    <Position X="14.5" Y="1" Width="2.25" />
+    <InheritanceLine Type="Structures" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="13.688" />
+        <Point X="15.062" Y="13.688" />
+        <Point X="15.062" Y="13.261" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.013" Y="0.187" Height="0.182" Width="0.5" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>JAYAAAmQAAAABRwCQVQAATAAESAAAIgU4gIbAAhQQCA=</HashCode>
+      <FileName>SsaoMeshes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Structures">
+    <Position X="12.5" Y="1" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Structures::Vect">
+        <TypeIdentifier>
+          <NewMemberFileName>Structures.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Structures::SkinningModels">
+        <TypeIdentifier>
+          <NewMemberFileName>Structures.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Structures::Models">
+        <TypeIdentifier>
+          <NewMemberFileName>Structures.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Structures::klawisze">
+        <TypeIdentifier>
+          <NewMemberFileName>Structures.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Structures::rozdziel">
+        <TypeIdentifier>
+          <NewMemberFileName>Structures.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIQAgDIAAACmgAEIAABEACAiRhAACIIEBAigABBRoCA=</HashCode>
+      <FileName>Structures.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureMgr">
+    <Position X="71.25" Y="16.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEIBABAAAAAAAAAAAAAAAAiAAAAAAA=</HashCode>
+      <FileName>TextureMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThirdPersonCamera">
+    <Position X="53" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>GA4gAIAAAgAECAECAACiAAAIAAAnAAABCBDAIABQCAM=</HashCode>
+      <FileName>ThirdPersonCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputLayoutDesc">
+    <Position X="58" Y="25.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAQACAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputLayouts">
+    <Position X="58" Y="22.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAQACAAAAEAAAAAAIBAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DirectionalLight">
+    <Position X="52.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAAAAgAAAiAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>LightHelper.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Material">
+    <Position X="54" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>LightHelper.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="M3dMaterial">
+    <Position X="69.25" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAIIAIAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>M3DLoader.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Keyframe">
+    <Position X="71.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAEAAAACAAIAAAAACAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SkinnedData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BoneAnimation">
+    <Position X="67.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIAAAAEAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SkinnedData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="AnimationClip">
+    <Position X="71.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAACAAAAAAAAQA=</HashCode>
+      <FileName>SkinnedData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SkinnedModelInstance">
+    <Position X="67.5" Y="17" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAIABAAAAAAAAAAAAAACAAAAAAAAAgAIAAAAAA=</HashCode>
+      <FileName>SkinnedModel.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vertex::Basic32">
+    <Position X="58" Y="27" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAACIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vertex::PosNormalTexTan">
+    <Position X="60.25" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAgAAAAAAAAAAAAACIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vertex::PosNormalTexTanSkinned">
+    <Position X="60.25" Y="22.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEAAAAAgAAAAAAAAAAAAACIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
