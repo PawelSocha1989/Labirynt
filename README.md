@@ -31,3 +31,7 @@ The project was created in C ++ using the DirectX 11 library.
 Like all my projects, it was created in the Microsoft Visual Studio development environment.
 As usual, all models and 3D animations were created by Autodesk 3ds Max Studio.
 As for textures, they were created in Adobe Photoshop.
+
+Links
+
+http://gamescomingfromthesoul.pl/labirynt/
