@@ -34,4 +34,4 @@ As for textures, they were created in Adobe Photoshop.
 
 Links
 
-http://gamescomingfromthesoul.pl/labirynt/
+https://www.youtube.com/watch?v=bd3yc1NX5r0&ab_channel=GamesComingFromTheSoul/
